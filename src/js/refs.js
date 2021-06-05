@@ -1,0 +1,15 @@
+export default {
+    filterButton: document.getElementById('open-filter'),
+    filterList: document.getElementById('list-of-filter'),
+    searchButton: document.getElementById('search-photos'),
+    input: document.getElementById('query'),
+    gallery: document.getElementById('gallery'),
+    loadMore: document.getElementById('download-more'),
+    typePhotos: document.getElementById('type-photos'),
+    orientationPhotos: document.getElementById('orientation-photos'),
+    categoriesPhotos: document.getElementById('categories-photos'),
+    popularityPhotos: document.getElementById('popularity'),
+    form: document.getElementById('search-form'),
+    scrollDown: document.getElementById('scroll-down'),
+    scrollUp: document.getElementById('scroll-up'),
+}
