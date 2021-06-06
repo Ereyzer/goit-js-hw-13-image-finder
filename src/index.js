@@ -1,5 +1,5 @@
 import './sass/main.scss';
-import '../node_modules/basiclightbox/dist/basicLightbox.min.css'
+import '../node_modules/basiclightbox/dist/basicLightbox.min.css';
 import './js/work-with-filter';
 import refs from './js/refs';
 import ApiService from './js/apiService';
