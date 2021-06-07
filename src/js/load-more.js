@@ -1,6 +1,8 @@
 //* щоб зрозуміти що тут відбувається потрібно включити повільний інтернет!!!!
 
 import refs from './refs';
+import {apiService} from '../index';
+
 const LOADING = ['L','O','A','D','I','N','G'];
 let text = 'L';
 let timeoutIdArray = [];
@@ -30,7 +32,7 @@ export function loadEnd() {
     timeoutIdArray.forEach((id)=>clearTimeout(id));
     timeoutIdArray = [];
     clearInterval(intervalId);
-    refs.loadMore.textContent ='download more';
+    refs.loadMore.textContent = apiService.MAX_PAGE ? 'That is all' : 'download more';
     return;
 }
 

@@ -23,9 +23,8 @@ document.addEventListener('liInGalery', (e)=>{
     refs.scrollUp.hidden = scrolled > coords ? false : true;
     refs.scrollUp.setAttribute('class', scrolled > coords ? 'scroll-up material-icons' : 'scroll-up');
     if(apiService.PAGE_COUNTER > 1){
-        console.log(apiService.MAX_PAGE)
         if (apiService.MAX_PAGE) {
-            refs.loadMore.textContent = 'That is all';
+            // refs.loadMore.textContent = 'That is all';
             return;
         }
         if(scrolled > test){
